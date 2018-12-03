@@ -2,12 +2,15 @@ server:
   port: 8001
 
 eureka:
+  instance:
+    instanceId: UserService
+    leaseRenewalIntervalInSeconds: 1
+    hostname: "$HOSTNAME"
   client:
     registerWithEureka: true
     fetchRegistry: true
     serviceUrl:
       defaultZone: http://localhost:2000/eureka
-
 hystrix:
   command:
     default:

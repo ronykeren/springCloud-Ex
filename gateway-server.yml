@@ -1,6 +1,15 @@
 server:
   port: 8080
 eureka:
+  instance:
+    instanceId: GatewayServer
+    leaseRenewalIntervalInSeconds: 1
+    hostname: "$HOSTNAME" 
   client:
     serviceUrl:
       defaultZone: http://localhost:2000/eureka
+management:
+  endpoints:
+     web:
+       exposure:
+          include: hytrix.stream
