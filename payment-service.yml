@@ -4,7 +4,6 @@ eureka:
   instance:
     instanceId: ${spring.application.name}:${spring.application.instance_id:${random.value}}
     leaseRenewalIntervalInSeconds: 1
-    hostname: "$HOSTNAME"
   client:
     registerWithEureka: true
     fetchRegistry: true

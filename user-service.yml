@@ -5,7 +5,6 @@ eureka:
   instance:
     instanceId: UserService
     leaseRenewalIntervalInSeconds: 1
-    hostname: "$HOSTNAME"
   client:
     registerWithEureka: true
     fetchRegistry: true
