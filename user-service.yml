@@ -3,7 +3,6 @@ server:
 
 eureka:
   instance:
-    instanceId: UserService
     leaseRenewalIntervalInSeconds: 1
   client:
     registerWithEureka: true

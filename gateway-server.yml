@@ -2,7 +2,6 @@ server:
   port: 8080
 eureka:
   instance:
-    instanceId: GatewayServer
     leaseRenewalIntervalInSeconds: 1 
   client:
     serviceUrl:
